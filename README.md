@@ -34,6 +34,14 @@ You can use this command to get an ID to test example 2 (M&M corner example):
 
 `curl -X POST -H "Content-Type: application/json" -d @examples/example2.json http://localhost:8080/receipts/process`
 
+## Unit Testing
+
+I also added a unit test file (endpoints_test.go) with a single unit test to confirm that the process receipts endpoint works with a standard input. 
+
+To run the unit test file run this command in the project root directory:
+
+`go test`
+
 ## Screenshots of my testing
 
 ![example1](./example1result.png)
